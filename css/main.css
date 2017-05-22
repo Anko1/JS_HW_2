@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("http://www.webdesigndev.com/wp-content/uploads/2013/06/Triangle.jpg");
+}
+#wrapper{
+    width: 90%;
+    margin: 0 5%;
+    height: 100vh;
+}
+
+
+#console-wrapper, #controls{
+    width: 40%;
+    margin: 0 5%;
+    float: left;
+    height: 100%;
+    padding: 5% 0;
+    position: relative;
+}
+
+#controls{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#console{
+    height: 100%;
+    overflow: auto;
+    border: 1px solid #8e24aa;
+    border-radius: 5px;
+}
+
+#console::before{
+    content: 'Console:';
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ex, .log{
+    width: 90%;
+    margin: 10px 5%;
+}
+
+.log{
+    background-color: antiquewhite;
+    margin: 20px 5%;
+    padding: 5px 10px;
+}
+
+.ex{
+    height: 8%;
+    background-color: #8e24aa;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
