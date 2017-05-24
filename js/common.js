@@ -95,7 +95,7 @@ function ask() {
 function loop() {
     var num = 0;
 
-    while (num < 100) {
+    while (num < 101) {
         num = ask();
     }
     // console.log(num);
@@ -106,7 +106,7 @@ function loop2() {
     var num = 0;
     do {
         num = ask();
-    } while (num < 100);
+    } while (num < 101);
 
     logger(num);
 }
